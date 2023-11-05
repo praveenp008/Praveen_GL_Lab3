@@ -1,0 +1,27 @@
+0c0e4757a5927e6384059db6513e48ba
+
+
+https://api.openweathermap.org/data/2.5/weather?q=France&appid=0c0e4757a5927e6384059db6513e48ba&units=metric
+
+openweathermap.org/current
+
+npm init --yes
+
+npm install global http-server
+
+http-server --port 9999
+
+http://localhost:9999/
+
+
+import { WeatherAPI } from "./weather-api.js";
+
+function testConstructURL(){
+
+  const weatherAPIObj = new WeatherAPI();
+  weatherAPIObj.constructURL("Mumbai");
+
+
+}
+
+testConstructURL();
